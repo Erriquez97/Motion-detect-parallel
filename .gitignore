@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Build folder
+build/
+
+# Vs code files
+.vscode/
+
+#Docker
+Dockerfile
