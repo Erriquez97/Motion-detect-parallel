@@ -20,7 +20,7 @@ At the end of the execution, the program reports the number of frames that diffe
 ## 2. Sequential Execution Measurements
 The first step is to implement the sequential version of the program in order to measure the time each function takes to be executed. The table below reports, in microseconds, the time each function takes to be executed.
 
-![Sequential Time]()
+![Sequential Time](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Sequential%20time.png)
 
 
 The first observation is that the **Read frame** function is the only one that cannot be parallelized. Based on this, the service time cannot be below **2600.8 μs**.
@@ -158,4 +158,4 @@ $  ./Statistics  1  ../Resources/Video1080p.mp4
 ### 7.3 Efficiency
 ![Efficiency](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Efficiency.png)
 ### 7.4 Scalability
-![Scalability]()
+![Scalability](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Scalability.png)
