@@ -150,5 +150,8 @@ $  ./Statistics  1  ../Resources/Video1080p.mp4
 ### 6.1 Service Time
 ![Service Time](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Service%20time.png)
 ### 6.2 Speedup
+![Speedup](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Speedup.png)
 ### 6.3 Efficiency
+![Efficiency](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Efficiency.png)
 ### 6.4 Scalability
+![Scalability]()
