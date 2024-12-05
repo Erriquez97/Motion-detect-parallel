@@ -148,7 +148,7 @@ $  ./Statistics  1  ../Resources/Video1080p.mp4
 ## 6. Results
 
 ### 6.1 Service Time
-![Service Time](images/Service time.png)
+![Service Time](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Service%20time.png)
 ### 6.2 Speedup
 ### 6.3 Efficiency
 ### 6.4 Scalability
