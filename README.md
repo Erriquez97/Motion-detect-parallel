@@ -148,7 +148,7 @@ $  ./Statistics  1  ../Resources/Video1080p.mp4
 ## 6. Results
 
 ### 6.1 Service Time
-
+![Service Time](images/Service time.png)
 ### 6.2 Speedup
 ### 6.3 Efficiency
 ### 6.4 Scalability
