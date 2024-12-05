@@ -4,11 +4,8 @@
 
 ## 1. Introduction
 
-  
-
 The goal of this project is to parallelize the motion detection of a video using two approaches: **Pthreads** and **Fastflow**. The motion detection process involves the following steps:
 
-  
 
 1.  **Grey Filter**: Converts the frame to grayscale.
 
@@ -16,13 +13,20 @@ The goal of this project is to parallelize the motion detection of a video using
 
 3.  **Motion Detection**: Compares the processed frame with the background (initial frame) to detect motion. If the difference exceeds a set threshold, motion is detected.
 
-  
 
 At the end of the execution, the program reports the number of frames that differ from the background. The task is parallelized as a stream problem since the input is a series of video frames, and the goal is to minimize service time.
 
+
+## 2. Sequential Execution Measurements
+The first step is to implement the sequential version of the program in order to measure the time each function takes to be executed. The table below reports, in microseconds, the time each function takes to be executed.
+
+![Sequential Time]()
+
+
+The first observation is that the **Read frame** function is the only one that cannot be parallelized. Based on this, the service time cannot be below **2600.8 μs**.
   
 
-## 2. Approach
+## 3. Approach
 
   
 
@@ -53,7 +57,7 @@ For optimal performance, 1 thread is used for reading and 10 threads for process
 
   
 
-## 3. Project Structure
+## 4. Project Structure
 
   
 
@@ -75,7 +79,7 @@ For optimal performance, 1 thread is used for reading and 10 threads for process
 
   
 
-## 4. Compilation
+## 5. Compilation
 
   
 
@@ -91,7 +95,7 @@ $  make
 ```
   
 
-## 5. Execution
+## 6. Execution
 
   
 
@@ -99,7 +103,7 @@ There  are  two  executables:  **VideoMotionDetect**  and  **Statistics**.
 
   
 
-### 5.1 VideoMotionDetect
+### 6.1 VideoMotionDetect
 
   
 
@@ -127,7 +131,7 @@ $ ./VideoMotionDetect 16  1  1 ../Resources/Video720p.mp4
   
   
 
-### 5.2 Statistics
+### 6.2 Statistics
 
 This program takes two inputs:
   
@@ -145,13 +149,13 @@ This program takes two inputs:
 $  ./Statistics  1  ../Resources/Video1080p.mp4
 ```
 
-## 6. Results
+## 7. Results
 
-### 6.1 Service Time
+### 7.1 Service Time
 ![Service Time](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Service%20time.png)
-### 6.2 Speedup
+### 7.2 Speedup
 ![Speedup](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Speedup.png)
-### 6.3 Efficiency
+### 7.3 Efficiency
 ![Efficiency](https://github.com/Erriquez97/Motion-detect-parallel/blob/main/images/Efficiency.png)
-### 6.4 Scalability
+### 7.4 Scalability
 ![Scalability]()
