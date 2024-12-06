@@ -94,9 +94,9 @@ Once the dependencies are installed , follow these steps to compile the project:
 
 
 ```bash
-$  cd  VideoMotionDetect/
-$  mkdir  build && cd  build
-$  cmake  ..
+$  cd VideoMotionDetect/
+$  mkdir build && cd build
+$  cmake ..
 $  make
 ```
   
@@ -125,7 +125,7 @@ This  program  takes  four  inputs:
   
 
 ```bash
-$ ./VideoMotionDetect 16  1  1 ../Resources/Video720p.mp4
+$ ./VideoMotionDetect 16 1 1 ../Resources/Video720p.mp4
 ```
   
   
@@ -145,7 +145,7 @@ This program takes two inputs:
   
 
 ```bash
-$  ./Statistics  1  ../Resources/Video1080p.mp4
+$  ./Statistics 1 ../Resources/Video1080p.mp4
 ```
 
 ## 7. Results
