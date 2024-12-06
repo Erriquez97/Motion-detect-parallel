@@ -81,11 +81,17 @@ For optimal performance, 1 thread is used for reading and 10 threads for process
 
 ## 5. Compilation
 
-  
+Before compiling, make sure your system is up to date and that the required dependencies are installed. You can do this by running the following commands:
 
-To compile the project, follow these steps:
+```bash
+$ sudo apt update
+$ sudo apt install g++
+$ sudo apt update cmake
+$ sudo apt install libopencv-dev 
+```
 
-  
+Once the dependencies are installed , follow these steps to compile the project:
+
 
 ```bash
 $  cd  VideoMotionDetect/
@@ -97,19 +103,12 @@ $  make
 
 ## 6. Execution
 
-  
-
 There  are  two  executables:  **VideoMotionDetect**  and  **Statistics**.
-
   
 
 ### 6.1 VideoMotionDetect
 
-  
-
 This  program  takes  four  inputs:
-
-  
 
 1.  **Number  of  threads**:  Set  to  `0`  for sequential execution, or a positive integer for parallel execution.
 
