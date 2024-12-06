@@ -86,7 +86,7 @@ Before compiling, make sure your system is up to date and that the required depe
 ```bash
 $ sudo apt update
 $ sudo apt install g++
-$ sudo apt update cmake
+$ sudo apt install cmake
 $ sudo apt install libopencv-dev 
 ```
 
